@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <img class="header_img" src="assets/Logo.png" alt="Logo de alura"/>
+            <h1 class="header_titulo">E N C R I P T A D O R</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <div class="contenido__encriptador">
+                <textarea class="contenido_input" name="textarea" id="textArea" placeholder="Ingrese el texto aqui"> </textarea>
+                
+                <div class="contenido__encriptador__mensaje">
+                  <img class="contenido__encriptador_imagen" src="./assets/advertencia.png" alt="advertencia"/>
+                  <p class="contenido_info">Solo letras minusculas y sin acentos</p>
+                </div>
+                
+                <div class="contenido_encriptador_botones">
+                  <button onclick="encryptText()" id="botonEncriptar" class="contenido_encriptador_boton">Encriptar</button>
+                  <button onclick="decryptText()" id="botonDescencriptar" class="contenido_desencriptador_boton">Desencriptar</button>
+                </div>
+
+            </div>
+
+            <div class="salida_section">
+                <div class="salida" id="salida"> El texto encriptado aparecerá aquí</div>
+                <button onclick="copyToClipboard()" id="botonCopiar" class="contenido_copiar_boton">Copiar</button>
+            </div>
+        </section>
+
+
+        <script src="app.js"></script>
+
+    </main>
+
+    <footer>
+        <p class="nombre">Desarrollado por Marian De la Rosa</p>
+        <div class="imagenes">
+            <a href="https://github.com/mariandlr">
+                <img class="imgGit" src="./assets/github.png" alt="Github">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/marian-de-la-rosa-castillo-5538572b8/">
+                <img class="imgLink" src="./assets/linkedin.png" alt="Linkedin">
+            </a>
+            
+        </div>
+        <p class="fecha">Agosto 2024</p>
+    </footer> 
+</body>
+</html>
